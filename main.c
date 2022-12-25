@@ -7,8 +7,6 @@
 #include "print.h"
 #include "modifiedarray.h"
 
-
-
 int main() {
     int h,buf, flag = 1;
     int *mass;
@@ -21,7 +19,7 @@ int main() {
         if (flag == 2) *mass = add(&h, &buf, mass, pArray);
         if (flag == 3) *mass= delete(&h, &buf, mass, pArray);
         if (flag == 4) print(mass, &h);
-        if (flag == 5) modifiedarray( &h, &buf, mass, pArray);
+        if (flag == 5) modifiedarray( &h, mass, pArray);
     }
     for (int i = 0; i < h; i++) {
         printf("%d", mass[i]);
