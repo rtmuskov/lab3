@@ -16,9 +16,9 @@ int modifiedarray(int *h, int *mass, int **pArray) {
             l--;
             a--;
             *pArray= realloc(mass,l *sizeof(int));
-          }
-        flag = 0;
         }
+        flag = 0;
+    }
     *h = l;
     printf("\nnew array is created\n");
     return 0;
