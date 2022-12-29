@@ -1,7 +1,6 @@
 #include "add.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "input.h"
 #include "check.h"
 int add (int *h, int *mass, int **pArray) {
     int id; int el; int flag =1;
