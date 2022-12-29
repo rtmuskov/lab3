@@ -8,8 +8,8 @@
 #include "input.h"
 #include "check.h"
 
-int delete(int *h, int *buf, int *mass, int **pArray) {
-    int id, flag = 1, size = *h, sizeUsed = *buf;
+int delete(int *h, int *mass, int **pArray) {
+    int id, flag = 1, size = *h, sizeUsed = *h;
     while (flag == 1) {
         printf("\n-----------------------");
         printf("\ndelete element at index: ");
@@ -22,7 +22,7 @@ int delete(int *h, int *buf, int *mass, int **pArray) {
             mass[i] = mass[i + 1];
         }
         sizeUsed--;
-        if (sizeUsed < size / 2) {
+        if (sizeUsed < size -1) {
             *pArray = realloc(mass, (size / 2) * sizeof(int));
             if (*pArray == NULL) {
                 printf("Failed to allocate memory\n");
@@ -36,6 +36,6 @@ int delete(int *h, int *buf, int *mass, int **pArray) {
     }
 
     *h = size;
-    *buf = sizeUsed;
+    *h= sizeUsed;
     return 0;
 }

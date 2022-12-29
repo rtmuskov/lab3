@@ -16,8 +16,8 @@ int main() {
         flag = check();
         if (flag == 0) break;
         if (flag == 1) mass = input(&h);
-        if (flag == 2) *mass = add(&h, &buf, mass, pArray);
-        if (flag == 3) *mass= delete(&h, &buf, mass, pArray);
+        if (flag == 2) *mass = add(&h,mass, pArray);
+        if (flag == 3) *mass= delete(&h, mass, pArray);
         if (flag == 4) print(mass, &h);
         if (flag == 5) modifiedarray( &h, mass, pArray);
     }

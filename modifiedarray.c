@@ -6,7 +6,7 @@ int modifiedarray(int *h, int *mass, int **pArray) {
     int flag = 0;
     int l = *h;
     for (int a = 0; a < l; a++) {
-        if((mass[a] % 9) == 0) { //((mass[a] % 9) && (mass[a] != 0)
+        if((mass[a] % 9 ==0 ) && (mass[a] != 0)) {
             flag = 1;
         }
         if (flag == 0) {
