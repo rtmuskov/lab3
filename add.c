@@ -46,15 +46,21 @@ return 0;
 */
 int add (int *h, int *mass, int **pArray) {
     int id;
+    printf("Print elelelement");
+    int el;
+    scanf("%d", &el);
     printf("/print index ");
-    id = check();
+    //id = check();
+    scanf("%d", &id);
+    *h= *h+1;
     *pArray = realloc(mass, (*h) * sizeof(int));
-    *h++;
+
     if (id >= *h) id = *h -1;
-    if (id < 0) *h = 0;
+    if (id < 0) id = 0;
     for (int i = *h - 1; i > id; i--) {
         (*pArray)[i] = (*pArray)[i - 1];
     }
+    (*pArray)[id] = el;
     mass = *pArray;
     return 0;
 }
