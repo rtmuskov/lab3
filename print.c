@@ -5,7 +5,7 @@
 #include "print.h"
 #include <stdio.h>
 int print(int *mass, int *h) {
-    printf("Array has length: %d", *h);
+    printf("Длина массива: %d", *h);
     for (int i = 0; i < *h; i++){
         printf("\n%d: %d\n", i, mass[i]);
 }

@@ -20,6 +20,6 @@ int modifiedarray(int *h, int *mass, int **pArray) {
         flag = 0;
     }
     *h = l;
-    printf("\nnew array is created\n");
+    printf("\nНовый массив создан\n");
     return 0;
 }

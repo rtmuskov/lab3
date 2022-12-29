@@ -7,10 +7,10 @@
 #include <stdlib.h>
 #include "check.h"
 int *input(int *h){
-    printf("enter the number of elements\n");
+    printf("Введите кол-во элементов\n");
     *h= check();
     int *mass = malloc(*h * sizeof(int ));
-    printf("enter the array elements\n");
+    printf("Введите элементы\n");
     for(int i=0; i<*h; i++){
         mass[i] = check();
     }

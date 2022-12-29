@@ -8,11 +8,11 @@
 #include "modifiedarray.h"
 
 int main() {
-    int h,buf, flag = 1;
+    int h,flag = 1;
     int *mass;
     int **pArray = &mass;
     while (flag) {
-        printf("if you want to initialize an array, press 1\nif you want to add element, press 2\nif you want to delete the element, press /3\nif you want to print array, press 4\nif you want to find numbers that are divisible by 9, press 5\nif you want to exit, press 0\n\n");
+        printf("Нажмите 1 если вы хотите проинициализировать массив\nНажмите 2, если хотите добавить элемент\nНажмите 3, если хотите удалить элемент\nНажмите 4, если хотите вывести массив\nНажмите 5, если хотите оставить числа, которые делятся на 9\nНажмите 0, если хотите выйти\n");
         flag = check();
         if (flag == 0) break;
         if (flag == 1) mass = input(&h);

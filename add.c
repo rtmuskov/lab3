@@ -6,9 +6,9 @@
 int add (int *h, int *mass, int **pArray) {
     int id; int el; int flag =1;
     while (flag == 1) {
-        printf("Print elelelement");
+        printf("Введите элемент");
         el = check();
-        printf("/print index ");
+        printf("/Введите индекс ");
         id = check();
         *h = *h + 1;
         *pArray = realloc(mass, (*h) * sizeof(int));
@@ -20,8 +20,8 @@ int add (int *h, int *mass, int **pArray) {
         }
         (*pArray)[id] = el;
         mass = *pArray;
-        printf("\nEnter [1] to insert anything else or [0] to finish: ");
-        input(&flag);
+        printf("\nНажмите 1, если хотите еще что-то добавить. Нажмите 0, если хотите выйти:");
+        flag=check();
     }
     return 0;
 }
