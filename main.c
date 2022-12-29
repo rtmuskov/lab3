@@ -12,7 +12,7 @@ int main() {
     int *mass;
     int **pArray = &mass;
     while (flag) {
-        printf("if you want to initialize an array, press 1\nif you want to add element, press 2\nif you want to delete the element, press /3\nif you want to print array, press 4\nif you want to find numbers that are divisible by 9, press 5\nif you want to exit, press 0");
+        printf("if you want to initialize an array, press 1\nif you want to add element, press 2\nif you want to delete the element, press /3\nif you want to print array, press 4\nif you want to find numbers that are divisible by 9, press 5\nif you want to exit, press 0\n\n");
         flag = check();
         if (flag == 0) break;
         if (flag == 1) mass = input(&h);
