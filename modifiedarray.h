@@ -4,5 +4,5 @@
 
 #ifndef UNTITLED4_MODIFIEDARRAY_H
 #define UNTITLED4_MODIFIEDARRAY_H
-int modifiedarray(int *h,int *mass, int **pArray);
+int modifiedarray(int *h, int *mass, int **pArray, int *mass2, int *h2);
 #endif //UNTITLED4_MODIFIEDARRAY_H

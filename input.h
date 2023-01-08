@@ -4,5 +4,5 @@
 
 #ifndef UNTITLED4_INPUT_H
 #define UNTITLED4_INPUT_H
-int *input(int *h);
+int *input(int *h,int *kl);
 #endif //UNTITLED4_INPUT_H
