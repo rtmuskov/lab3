@@ -7,7 +7,6 @@
 #include "print.h"
 #include "modifiedarray.h"
 int main() {
-    system("chcp 65001");
     int el, id;
     int kl;
     int flag1=0;
