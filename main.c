@@ -9,7 +9,6 @@
 int main() {
     int el, id;
     int kl;
-    int flag1=0;
     int h,h2,flag = 1;
     int fl = 0, fl2 = 0, fl5 = 0;
     int *mass;
